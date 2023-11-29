@@ -4,6 +4,7 @@ use konta_uzytkownikow
 go
 create table uzytkownicy
 (
-	loginy	varchar(30) primary key,
+	id_u	int primary key auto_increment,
+	loginy	varchar(30) unique not null,
 	hasla	varchar(20) unique not null,
 	);
